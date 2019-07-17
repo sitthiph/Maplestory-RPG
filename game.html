@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maplestory RPG</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!--game is use as wrapper-->
+<div id="game">
+    <!--Start screen and character select screen-->
+    <div id="start-screen">
+        <img src="assets/images/loginPage.png" alt = "Background img" id="background-image">
+        <img src="assets/images/MS_Logo.png" alt="MapleStory Logo." id="logo-image">
+        <!--Start Button-->
+        <div id="start-container">
+            <button id="button-start"><b>Start</b></button>
+        </div>
+        <!--Char selection-->
+        <div id="char-select-container" >
+            <h2><b>Choose your classes</b></h2>
+            <div id="class-selection">
+                <img src="assets/images/phantom.png" alt="Phantom Class" id="phantom-class-section">
+                <img src="assets/images/luminous.png" alt="Luminous Class" class="class-not-available" id="luminous-class-section">
+                <img src="assets/images/dualBlade.png" alt="Dual Blade Class" class="class-not-available" id="dual-blade-class-section">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/javascript/phantom.js"></script>
+<script src="assets/javascript/game.js"></script>
+<script src="assets/javascript/gameMenu.js"></script>
+</body>
+</html>

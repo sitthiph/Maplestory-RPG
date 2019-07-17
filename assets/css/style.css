@@ -1,0 +1,93 @@
+html {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), default;
+}
+
+html:active {
+    cursor: url("../images/MouseClick.png"), default;
+}
+
+body {
+    min-height: 720px;
+    max-height: 720px;
+    min-width: 1080px;
+    max-width: 1080px;
+}
+
+#onkeyup {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), default;
+}
+#onkeydown {
+    cursor: url("../images/MouseClick.png"), default;
+}
+
+#game {
+    width: 1080px;
+    height: 720px;
+}
+
+#background-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+#logo-image {
+    height: 30%;
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 30vw;
+}
+
+#button-start {
+    display: block;
+    position: absolute;
+    padding: 10px 60px;
+    top: 60vh;
+    left: 45vw;
+    background-image: linear-gradient(#BB9A77, #E2CDB0);
+    border-style: groove;
+    border-color: #BB9A77;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+}
+
+#char-select-container {
+    background-image: linear-gradient(#BB9A77, #E2CDB0);
+    display: none;
+    height: 260px;
+    width: 600px;
+    border-style: groove;
+    border-color: #BB9A77;
+    position: absolute;
+    top: 50vh;
+    left: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    color: #684C34;
+
+}
+
+#char-select-container h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #684C34;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#class-selection {
+    margin-top: 25px;
+    padding-left: 10px;
+}
+
+.class-not-available {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.class-not-select {
+    opacity: 0.5;
+}
