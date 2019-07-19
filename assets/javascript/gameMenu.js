@@ -16,7 +16,6 @@ $(document).ready(function(){
     // Toggle (.class-not-select) to make not-select opacity = 0.5;
     $("#phantom-class-section").click(function () {
         if($("#phantom-class-section").hasClass("select")){
-            alert("Picked Phantom");
             game.charSelect("Phantom");
         } else {
             $("#phantom-class-section").toggleClass("select");
@@ -34,8 +33,7 @@ $(document).ready(function(){
     });
     $("#luminous-class-section").click(function () {
         if($("#luminous-class-section").hasClass("select")){
-            alert("Picked Lumi");
-            // doesn't do anything yet since like... i didnt code lumi.
+            // TODO: LOL imagine if I actually coded it? V.1.2 prob;
         } else {
             $("#luminous-class-section").toggleClass("select");
             if ($("#luminous-class-section").hasClass("class-not-select"))
@@ -52,8 +50,7 @@ $(document).ready(function(){
     });
     $("#dual-blade-class-section").click(function () {
         if($("#dual-blade-class-section").hasClass("select")){
-            alert("Picked Dual Blade");
-            // TODO: Set player character to Phantom;
+            // TODO: LOL imagine if I actually coded it? V.1.4 prob;
         } else {
             $("#dual-blade-class-section").toggleClass("select");
             if (!$("#luminous-class-section").hasClass("class-not-select"))

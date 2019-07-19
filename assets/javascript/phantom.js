@@ -6,9 +6,10 @@ function phantomObject(player) {
         "missChance": 70,
         "resistChance": 10,
         "charDefaultAnimation" : [
-            "1.png",
-            "2.png",
-            "3.png"
+            "assets/inGame/char/Phantom/charModel/default/stand1_0.png",
+            "assets/inGame/char/Phantom/charModel/default/stand1_1.png",
+            "assets/inGame/char/Phantom/charModel/default/stand1_2.png",
+            "assets/inGame/char/Phantom/charModel/default/stand1_3.png"
         ],
         "charHitAnimation" : [
             "1.png",

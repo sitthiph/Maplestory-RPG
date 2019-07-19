@@ -10,7 +10,8 @@
 <div>
     <h1>This is a fan-based game. It is used to showcase coding skills.<br>All the copyrights belong to Nexon Co., Ltd.</h1>
     <button class="btn btn-light" id="button">Start Game!</button>
-    <h2 style="color: red">Warning : Do not resize the game. It will not work!</h2>
+    <h2 style="color: red">Warning : Change zoom to 90% and do not resize the game.</h2>
+    <h3>tested on chrome only</h3>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -36,8 +37,11 @@
         text-align: center;
     }
     html {
-        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), auto;
+        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), default;
         background-color: black;
+    }
+    html:active {
+        cursor: url("/assets/images/MouseClick.png"), default;
     }
     button {
         margin-top: 1em;
@@ -45,6 +49,9 @@
 
     h1 {
         color: white;
+    }
+    button:hover {
+        cursor: inherit;
     }
 </style>
 </html>

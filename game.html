@@ -13,7 +13,7 @@
 <div id="game">
     <!--Start screen and character select screen-->
     <div id="start-screen">
-        <img src="assets/images/loginPage.png" alt = "Background img" id="background-image">
+        <img src="assets/images/loginPage.png" alt = "Background img" class="background-image">
         <img src="assets/images/MS_Logo.png" alt="MapleStory Logo." id="logo-image">
         <!--Start Button-->
         <div id="start-container">
@@ -29,6 +29,28 @@
             </div>
         </div>
     </div>
+    <!--Fake Loading screen. No game is real without loading screen-->
+    <div id="loading-screen" style="display: none">
+        <img src="assets/images/loading.png">
+        <h1>Loading...</h1>
+</div>
+    <!--Game stage itself>-->
+    <div id="game-screen" style="display: none">
+        <img src="assets/inGame/maps/MNzRh4E.jpg" alt = "Background img" class="background-image">
+        <div id="scoreboard"></div>
+        <div id="player">
+                <img src="assets/images/char.png" class="char-wrap" id="char1">
+        </div>
+        <div id="action-selector">
+            <div id="attack"></div>
+            <div id="skills"></div>
+            <div id="guard"></div>
+            <div id="item"></div>
+        </div>
+        <div id="enemy">
+            <img src="assets/inGame/mobs/innerRage/stand_0.png" class="mob-wrap">
+        </div>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -39,5 +61,6 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 <script src="assets/javascript/phantom.js"></script>
 <script src="assets/javascript/game.js"></script>
 <script src="assets/javascript/gameMenu.js"></script>
+<script src="assets/javascript/gameScreen.js"></script>
 </body>
 </html>

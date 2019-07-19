@@ -1,5 +1,5 @@
 html {
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), default;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), auto;
 }
 
 html:active {
@@ -13,6 +13,11 @@ body {
     max-width: 1080px;
 }
 
+#start-screen, #loading-screen, #game-screen {
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
 #onkeyup {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=35050), default;
 }
@@ -25,7 +30,107 @@ body {
     height: 720px;
 }
 
-#background-image {
+
+#logo-image {
+height: 30%;
+display: block;
+position: absolute;
+top: 15vh;
+left: 30vw;
+}
+
+#button-start {
+display: block;
+position: absolute;
+padding: 10px 60px;
+top: 60vh;
+left: 45vw;
+background-image: linear-gradient(#BB9A77, #E2CDB0);
+border-style: groove;
+border-color: #BB9A77;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+}
+
+#button-start:hover {
+cursor: inherit;
+}
+
+#char-select-container {
+background-image: linear-gradient(#BB9A77, #E2CDB0);
+display: none;
+height: 260px;
+width: 600px;
+border-style: groove;
+border-color: #BB9A77;
+position: absolute;
+top: 50vh;
+left: 30vw;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+color: #684C34;
+cursor: inherit;
+
+}
+
+#char-select-container h2 {
+padding-top: 10px;
+text-align: center;
+color: #684C34;
+text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#class-selection {
+margin-top: 25px;
+padding-left: 10px;
+}
+
+#loading-screen {
+size: inherit;
+background-color: black;
+align-self: center;
+text-align: center;
+}
+
+#scoreboard {
+    border-style: solid;
+    height: 50px;
+    width: 1300px;
+    position: sticky;
+    top: 50px;
+    left: 60px;
+    background-color: white
+}
+
+#enemy {
+    border-style: solid;
+    height: 250px;
+    width: 600px;
+    position: sticky;
+    top: 650px;
+    left: 100px;
+}
+
+#action-selector {
+    border-style: solid;
+    height: 300px;
+    width: 1300px;
+    position: sticky;
+    top: 50px;
+    left: 60px;
+    background-color: white
+}
+
+#player {
+    border-style: solid;
+    height: 150px;
+    width: 400px;
+    position: sticky;
+    top: 650px;
+    left: 900px;
+}
+
+.background-image {
     display: block;
     position: absolute;
     width: 100%;
@@ -34,60 +139,24 @@ body {
     z-index: -1;
 }
 
-#logo-image {
-    height: 30%;
-    display: block;
-    position: absolute;
-    top: 15vh;
-    left: 30vw;
-}
-
-#button-start {
-    display: block;
-    position: absolute;
-    padding: 10px 60px;
-    top: 60vh;
-    left: 45vw;
-    background-image: linear-gradient(#BB9A77, #E2CDB0);
-    border-style: groove;
-    border-color: #BB9A77;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-}
-
-#char-select-container {
-    background-image: linear-gradient(#BB9A77, #E2CDB0);
-    display: none;
-    height: 260px;
-    width: 600px;
-    border-style: groove;
-    border-color: #BB9A77;
-    position: absolute;
-    top: 50vh;
-    left: 30vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    color: #684C34;
-
-}
-
-#char-select-container h2 {
-    padding-top: 10px;
-    text-align: center;
-    color: #684C34;
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#class-selection {
-    margin-top: 25px;
-    padding-left: 10px;
-}
-
 .class-not-available {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+filter: grayscale(100%);
 }
 
 .class-not-select {
-    opacity: 0.5;
+opacity: 0.5;
+}
+
+.char-wrap {
+    margin-left: 2px;
+    margin-right: 20px;
+    height: 150px;
+}
+
+.mob-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: 34px;
+    float: right;
 }
